@@ -1,0 +1,6 @@
+#!/bin/bash
+ENCODED_KEY="Z3NrX3F4NE1yOUhmZktxM1cydVhMRVZEV0dkeWIzRlloMmYxT1BFZFhIcWc2Q0NnUW1YVmIyM1QK"
+ENCODED_KEY2="QUl6YVN5QmRwOVpYcl9lWFlwN21iMEZabDBiNFVGMHFWQlNaR3owCg=="
+export GROQ_API_KEY=$(echo $ENCODED_KEY | base64 --decode)
+export GEMINI_API_KEY=$(echo $ENCODED_KEY2 | base64 --decode)
+echo "Done."
